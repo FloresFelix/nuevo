@@ -5,13 +5,4 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu03"
-    android:background="@drawable/menu03">
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="316dp"
-        android:layout_height="303dp"
-        app:srcCompat="@drawable/detalles1"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="144dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:background="@drawable/menu03"/>
