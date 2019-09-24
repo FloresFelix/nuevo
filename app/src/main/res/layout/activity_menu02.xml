@@ -21,4 +21,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/personaje" />
 
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="113dp"
+        android:layout_height="105dp"
+        app:srcCompat="@drawable/botonama1"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="48dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
