@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuEmociones"
+    android:background="@drawable/emo_background">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/personaje" />
+
+    <ViewFlipper
+        android:id="@+id/viewFliper"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true"
+        android:addStatesFromChildren="false"
+        android:layout_marginTop="120dp"
+        android:animateFirstView="false"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:isScrollContainer="true"
+        android:measureAllChildren="true"
+        android:nestedScrollingEnabled="true"
+        android:outAnimation="@android:anim/slide_out_right"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo1">
+
+        <ImageButton
+            android:id="@+id/pic00"
+            android:layout_width="144dp"
+            android:layout_height="150dp"
+            android:layout_alignStart="@+id/viewFliper"
+            android:layout_alignTop="@+id/viewFliper"
+            android:layout_alignEnd="@+id/viewFliper"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:contentDescription="Estoy cantando"
+            android:scaleType="fitCenter"
+            android:src="@drawable/carabonton1" />
+
+        <ImageButton
+            android:id="@+id/pic01"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:contentDescription="estoy contento"
+            android:scaleType="fitCenter"
+            android:src="@drawable/caratranquilo" />
+
+        <ImageButton
+            android:id="@+id/pic02"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:contentDescription="Estoy gritando"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic_gritando" />
+
+        <ImageButton
+            android:id="@+id/pic03"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:contentDescription="estoy temeroso"
+            android:scaleType="fitCenter"
+            android:src="@drawable/caraboton2" />
+
+        <ImageButton
+            android:id="@+id/pic04"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:contentDescription="Temgo verguenza"
+            android:scaleType="fitCenter"
+            android:src="@drawable/verguenza" />
+
+        <ImageButton
+            android:id="@+id/pic05"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:contentDescription="Estoy sorprendido"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sorprender" />
+
+        <ImageButton
+            android:id="@+id/pic06"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:contentDescription="Estoy cansado"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cansados" />
+
+
+    </ViewFlipper>
+
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@id/viewFliper"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="-60dp"
+        android:background="@drawable/round_button"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/emo_flecha02" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/viewFliper"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-60dp"
+        android:background="@drawable/round_button"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/emo_flecha01" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignStart="@id/viewFliper"
+        android:layout_alignRight="@id/viewFliper"
+        android:layout_alignBottom="@id/viewFliper"
+        android:layout_marginStart="175dp"
+        android:layout_marginRight="-129dp"
+        android:layout_marginBottom="-482dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/emo_detalle" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@id/viewFliper"
+        android:layout_alignRight="@id/viewFliper"
+        android:layout_alignBottom="@id/viewFliper"
+        android:layout_marginStart="-133dp"
+        android:layout_marginRight="163dp"
+        android:layout_marginBottom="-483dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/emo_dallete02" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@id/viewFliper"
+        android:layout_alignBottom="@id/viewFliper"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="-447dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo1" />
+
+    <ImageButton
+        android:id="@+id/btn_altavoz"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/viewFliper"
+        android:layout_centerHorizontal="true"
+        android:alpha="0"
+        android:background="@drawable/round_button"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/emo_altavoz" />
+
+    <ImageButton
+        android:id="@+id/pictograma_back"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@id/viewFliper"
+        android:layout_marginLeft="-87dp"
+        android:layout_marginTop="40dp"
+        android:alpha="0.2"
+        android:scaleType="fitStart"
+        />
+
+    <ImageButton
+        android:id="@+id/pictograma_next"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:alpha="0.2"
+        android:layout_alignRight="@id/viewFliper"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="-94dp"
+        android:isScrollContainer="false"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>
