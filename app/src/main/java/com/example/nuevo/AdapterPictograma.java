@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
@@ -24,7 +26,7 @@ public class AdapterPictograma extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return pictogramas.size();
     }
 
     @Override
@@ -43,6 +45,12 @@ public class AdapterPictograma extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
 
-        return super.instantiateItem(container, position);
+        View view = layoutInflater.inflate(R.layout.item_pictograma,container,false);
+        ImageView imageView = view.findViewById(R.id.img_pictograma);
+        TextView textView = view.findViewById(R.id.nombre_pictograma);
+        imageView.setImageResource(pictogramas.get(position).getPictograma());
+        textView.setText(pictogramas.get(position).getNombre_pictograma());
+        container.addView(view);
+        return view;
     }
 }
