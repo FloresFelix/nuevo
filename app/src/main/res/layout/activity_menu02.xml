@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/emo_background"
+    android:background="@drawable/fondologo1"
     tools:context=".Menu02">
 
 
@@ -14,7 +14,6 @@
         android:layout_height="40dp"
         android:layout_above="@id/imageView3"
         android:layout_alignRight="@id/imageView3"
-        android:layout_centerVertical="true"
         android:layout_marginRight="-20dp"
         android:layout_marginBottom="-70dp"
         android:background="@drawable/round_button"
@@ -29,26 +28,6 @@
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/personaje" />
 
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_alignRight="@id/imageView4"
-        android:layout_alignBottom="@id/imageView4"
-        android:layout_marginRight="-169dp"
-        android:layout_marginBottom="-96dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/detalle_verde" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="141dp"
-        android:layout_height="133dp"
-        android:layout_alignBottom="@id/imageView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-97dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/logo1" />
 
     <ImageButton
         android:id="@+id/btn_alimentacion"
