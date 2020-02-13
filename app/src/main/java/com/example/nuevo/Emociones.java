@@ -14,6 +14,7 @@ public class Emociones extends AppCompatActivity {
 
     ArrayList<ItemPictograma> pictogramas;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -28,8 +28,7 @@
             app:icvp_min_page_scale_offset="5dp"
             app:icvp_max_page_scale="0.8"
             app:icvp_min_page_scale="0.55"
-            app:icvp_medium_scaled="false"
-            android:background="@color/colorPrimary">
+            app:icvp_medium_scaled="false">
 
         </com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager>
 

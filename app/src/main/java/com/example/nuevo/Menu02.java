@@ -21,7 +21,7 @@ public class Menu02 extends AppCompatActivity {
         btn_emociones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Menu02.this,MenuEmociones.class);
+                Intent intent = new Intent(Menu02.this,Emociones.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }

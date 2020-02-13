@@ -16,6 +16,7 @@
         <activity android:name=".Menu03" />
         <activity android:name=".Menu02" />
         <activity android:name=".Menu01" />
+        <activity android:name=".Emociones" />
         <activity android:name=".splash">
 
             <intent-filter>
