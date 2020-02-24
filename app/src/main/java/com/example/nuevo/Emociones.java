@@ -42,6 +42,9 @@ public class Emociones extends AppCompatActivity {
                 pictogramas.add(new ItemPictograma(R.drawable.caraboton2,"Triste"));
                 pictogramas.add(new ItemPictograma(R.drawable.carafeliz,"Pensativo"));
                 pictogramas.add(new ItemPictograma(R.drawable.caratranquilo,"Tranquilo"));
+                pictogramas.add(new ItemPictograma(R.drawable.carafeliz,"Pensativo"));
+                pictogramas.add(new ItemPictograma(R.drawable.caratranquilo,"Tranquilo"));
+
                 break;
             }
             case 2:{
