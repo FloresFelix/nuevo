@@ -11,10 +11,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Random;
 
 public class AdapterPictograma extends PagerAdapter {
 
@@ -34,7 +37,7 @@ public class AdapterPictograma extends PagerAdapter {
             public void onInit(int status) {
 
                 if (status == TextToSpeech.SUCCESS) {
-                    int result = textToSpeech.setLanguage(new Locale("spa", "MEX"));
+                    int result = textToSpeech.setLanguage(new Locale("spa", "ESP"));
                     if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                         //Toast.makeText(context, "Lenguaje No Soportado", Toast.LENGTH_LONG).show();
                     } else {
@@ -76,6 +79,12 @@ public class AdapterPictograma extends PagerAdapter {
         textView.setText(pictogramas.get(position).getNombre_pictograma());
         container.addView(view);
 
+        CardView cardView = view.findViewById(R.id.card);
+        int[] lista_de_clores = context.getResources().getIntArray(R.array.lista_de_colores);
+        int randomAndroidColor = lista_de_clores[new Random().nextInt(lista_de_clores.length)];
+
+        cardView.setCardBackgroundColor(ContextCompat.getColor(context, R.color.Aqua+1));
+
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,7 +96,7 @@ public class AdapterPictograma extends PagerAdapter {
                 else {
                     textToSpeech.speak(pictogramas.get(position).getNombre_pictograma(), TextToSpeech.QUEUE_ADD, null);
                 }
-                Toast.makeText(context,"Clickeand Pictograna"+pictogramas.get(position).getNombre_pictograma(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(context,"Clickeand Pictograna"+pictogramas.get(position).getNombre_pictograma(),Toast.LENGTH_SHORT).show();
             }
         });
         return view;

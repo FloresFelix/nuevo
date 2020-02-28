@@ -68,7 +68,7 @@
         app:srcCompat="@drawable/botonama2" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/img_recreatividad"
         android:layout_width="135dp"
         android:layout_height="60dp"
         android:layout_alignLeft="@id/btn_recreatividad"
@@ -79,7 +79,7 @@
         app:srcCompat="@drawable/recreatividad" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/img_emociones"
         android:layout_width="135dp"
         android:layout_height="60dp"
         android:layout_alignRight="@id/btn_emociones"
@@ -90,7 +90,7 @@
         app:srcCompat="@drawable/emociones" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/img_alimentacion"
         android:layout_width="135dp"
         android:layout_height="60dp"
         android:layout_below="@id/btn_alimentacion"
@@ -101,7 +101,7 @@
         app:srcCompat="@drawable/alimentacion" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/img_higiene"
         android:layout_width="135dp"
         android:layout_height="60dp"
         android:layout_alignRight="@id/btn_higiene"

@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MenuEmociones"></activity>
-        <activity android:name=".Menu04" />
+        <activity android:name=".Oraciones" />
         <activity android:name=".Menu03" />
         <activity android:name=".Menu02" />
         <activity android:name=".Menu01" />

@@ -19,4 +19,17 @@
     <color name="MidnightBlue">#191970</color>
     <color name="Aqua">#00FFFF</color>
     <color name="Cyan">#00FFFF</color>
+
+    <integer-array name="lista_de_colores">
+        <item>@color/RoyalBlue</item>
+        <item>@color/Cyan</item>
+        <item>@color/LimeGreen</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/Aqua</item>
+        <item>@color/MidnightBlue</item>
+        <item>@color/colorAccent</item>
+        <item>@color/bienvenido</item>
+        <item>@color/RoyalBlue</item>
+        <item>@color/SeaGreen</item>
+    </integer-array>
 </resources>

@@ -38,7 +38,7 @@ public class Emociones extends AppCompatActivity {
 
             case 1:{
                 titulo.setImageResource(R.drawable.emociones);
-                pictogramas.add(new ItemPictograma(R.drawable.carabonton1,"Felixz"));
+                pictogramas.add(new ItemPictograma(R.drawable.carabonton1,"Feliz"));
                 pictogramas.add(new ItemPictograma(R.drawable.caraboton2,"Triste"));
                 pictogramas.add(new ItemPictograma(R.drawable.carafeliz,"Pensativo"));
                 pictogramas.add(new ItemPictograma(R.drawable.caratranquilo,"Tranquilo"));
@@ -49,7 +49,7 @@ public class Emociones extends AppCompatActivity {
             }
             case 2:{
                 titulo.setImageResource(R.drawable.alimentacion);
-                pictogramas.add(new ItemPictograma(R.drawable.carabonton1,"Felixz"));
+                pictogramas.add(new ItemPictograma(R.drawable.carabonton1,"Feliz"));
                 pictogramas.add(new ItemPictograma(R.drawable.caraboton2,"Triste"));
                 pictogramas.add(new ItemPictograma(R.drawable.carafeliz,"Pensativo"));
                 pictogramas.add(new ItemPictograma(R.drawable.caratranquilo,"Tranquilo"));
@@ -57,7 +57,7 @@ public class Emociones extends AppCompatActivity {
             }
             case 3:{
                 titulo.setImageResource(R.drawable.higiene);
-                pictogramas.add(new ItemPictograma(R.drawable.carabonton1,"Felixz"));
+                pictogramas.add(new ItemPictograma(R.drawable.carabonton1,"Feliz"));
                 pictogramas.add(new ItemPictograma(R.drawable.caraboton2,"Triste"));
                 pictogramas.add(new ItemPictograma(R.drawable.carafeliz,"Pensativo"));
                 pictogramas.add(new ItemPictograma(R.drawable.caratranquilo,"Tranquilo"));
