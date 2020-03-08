@@ -45,9 +45,9 @@ public class Oraciones extends AppCompatActivity {
         pager = findViewById(R.id.palabra1);
         pager2 = findViewById(R.id.palabra2);
         pager3 = findViewById(R.id.palabra3);
-        adapterPictograma1 = new AdapterPictograma(pictogramas_palabra1,getApplicationContext());
-        adapterPictograma2 = new AdapterPictograma(pictogramas_palabra2,getApplicationContext());
-        adapterPictograma3 = new AdapterPictograma(pictogramas_palabra3,getApplicationContext());
+        adapterPictograma1 = new AdapterPictograma(pictogramas_palabra1,getApplicationContext(),1);
+        adapterPictograma2 = new AdapterPictograma(pictogramas_palabra2,getApplicationContext(),1);
+        adapterPictograma3 = new AdapterPictograma(pictogramas_palabra3,getApplicationContext(),1);
         pager.setAdapter(adapterPictograma1);
         pager2.setAdapter(adapterPictograma2);
         pager3.setAdapter(adapterPictograma3);

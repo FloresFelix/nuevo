@@ -26,11 +26,14 @@ public class AdapterPictograma extends PagerAdapter {
     Context context;
     LayoutInflater layoutInflater;
     TextToSpeech textToSpeech;
+    int opcion;
 
-    public AdapterPictograma(ArrayList<ItemPictograma> pictogramas, Context context) {
+    public AdapterPictograma(ArrayList<ItemPictograma> pictogramas, Context context, int op) {
         this.pictogramas = pictogramas;
         this.context = context;
+        this.opcion = op;
         layoutInflater = LayoutInflater.from(context);
+
 
         textToSpeech = new TextToSpeech(context, new TextToSpeech.OnInitListener() {
             @Override
@@ -64,7 +67,7 @@ public class AdapterPictograma extends PagerAdapter {
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
 
-        container.removeView((View)object);
+        container.removeView((View) object);
     }
 
 
@@ -72,34 +75,65 @@ public class AdapterPictograma extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, final int position) {
 
-        View view = layoutInflater.inflate(R.layout.item_pictograma,container,false);
-        ImageView imageView = view.findViewById(R.id.img_pictograma);
-        TextView textView = view.findViewById(R.id.nombre_pictograma);
-        imageView.setImageResource(pictogramas.get(position).getPictograma());
-        textView.setText(pictogramas.get(position).getNombre_pictograma());
-        container.addView(view);
 
-        CardView cardView = view.findViewById(R.id.card);
-        int[] lista_de_clores = context.getResources().getIntArray(R.array.lista_de_colores);
-        int randomAndroidColor = lista_de_clores[new Random().nextInt(lista_de_clores.length)];
+        if (opcion == 1) {
+            View view = layoutInflater.inflate(R.layout.item_pictograma, container, false);
+            ImageView imageView = view.findViewById(R.id.img_pictograma);
+            TextView textView = view.findViewById(R.id.nombre_pictograma);
 
-        cardView.setCardBackgroundColor(ContextCompat.getColor(context, R.color.Aqua+1));
+            CardView cardView = view.findViewById(R.id.card);
+            ViewGroup.LayoutParams layoutParams2 = cardView.getLayoutParams();
+            layoutParams2.height = 750;
+            cardView.setLayoutParams(layoutParams2);
+            int[] lista_de_clores = context.getResources().getIntArray(R.array.lista_de_colores);
+            int randomAndroidColor = lista_de_clores[new Random().nextInt(lista_de_clores.length)];
+            cardView.setCardBackgroundColor(randomAndroidColor);
 
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SetTextoAVoz();
-                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-                {
-                    textToSpeech.speak(pictogramas.get(position).nombre_pictograma,TextToSpeech.QUEUE_ADD,null,null);
+
+            ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
+            layoutParams.height = 600;
+            layoutParams.height = 600;
+            imageView.setLayoutParams(layoutParams);
+
+            textView.setTextSize(20);
+
+
+            imageView.setImageResource(pictogramas.get(position).getPictograma());
+            textView.setText(pictogramas.get(position).getNombre_pictograma());
+           // Toast.makeText(context, "Clickeand Pictograna", Toast.LENGTH_SHORT).show();
+            container.addView(view);
+            return view;
+
+
+
+
+        } else {
+            View view = layoutInflater.inflate(R.layout.item_pictograma, container, false);
+            ImageView imageView = view.findViewById(R.id.img_pictograma);
+            TextView textView = view.findViewById(R.id.nombre_pictograma);
+            imageView.setImageResource(pictogramas.get(position).getPictograma());
+            textView.setText(pictogramas.get(position).getNombre_pictograma());
+            container.addView(view);
+
+            CardView cardView = view.findViewById(R.id.card);
+            int[] lista_de_clores = context.getResources().getIntArray(R.array.lista_de_colores);
+            int randomAndroidColor = lista_de_clores[new Random().nextInt(lista_de_clores.length)];
+            cardView.setCardBackgroundColor(randomAndroidColor);
+
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    SetTextoAVoz();
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        textToSpeech.speak(pictogramas.get(position).nombre_pictograma, TextToSpeech.QUEUE_ADD, null, null);
+                    } else {
+                        textToSpeech.speak(pictogramas.get(position).getNombre_pictograma(), TextToSpeech.QUEUE_ADD, null);
+                    }
+                    //Toast.makeText(context,"Clickeand Pictograna"+pictogramas.get(position).getNombre_pictograma(),Toast.LENGTH_SHORT).show();
                 }
-                else {
-                    textToSpeech.speak(pictogramas.get(position).getNombre_pictograma(), TextToSpeech.QUEUE_ADD, null);
-                }
-                //Toast.makeText(context,"Clickeand Pictograna"+pictogramas.get(position).getNombre_pictograma(),Toast.LENGTH_SHORT).show();
-            }
-        });
-        return view;
+            });
+            return view;
+        }
     }
     void SetTextoAVoz()
     {

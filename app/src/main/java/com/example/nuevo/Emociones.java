@@ -27,7 +27,7 @@ public class Emociones extends AppCompatActivity {
         pictogramas = new ArrayList<>();
         LlenarDatos();
         HorizontalInfiniteCycleViewPager horizontalInfiniteCycleViewPager = findViewById(R.id.cards);
-        AdapterPictograma adapterPictograma = new AdapterPictograma(pictogramas,getApplicationContext());
+        AdapterPictograma adapterPictograma = new AdapterPictograma(pictogramas,getApplicationContext(),0);
         horizontalInfiniteCycleViewPager.setAdapter(adapterPictograma);
     }
 

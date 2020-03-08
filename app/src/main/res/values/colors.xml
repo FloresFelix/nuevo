@@ -19,17 +19,30 @@
     <color name="MidnightBlue">#191970</color>
     <color name="Aqua">#00FFFF</color>
     <color name="Cyan">#00FFFF</color>
+    <color name="negro">#000000</color>
+
+
+    <color name="pastel01">#ffb3ba</color>
+    <color name="pastel02">#ffdfba</color>
+    <color name="pastel03">	#ffffba</color>
+    <color name="pastel04">#baffc9</color>
+    <color name="pastel05">#bae1ff</color>
+    <color name="pastel06">#957DAD</color>
+    <color name="pastel07">#E0BBE4</color>
+    <color name="pastel08">	#D9FFFF</color>
+    <color name="pastel09">#6CB2D1</color>
+    <color name="pastel10">#77DF79</color>
 
     <integer-array name="lista_de_colores">
-        <item>@color/RoyalBlue</item>
-        <item>@color/Cyan</item>
-        <item>@color/LimeGreen</item>
-        <item>@color/colorPrimaryDark</item>
-        <item>@color/Aqua</item>
-        <item>@color/MidnightBlue</item>
-        <item>@color/colorAccent</item>
-        <item>@color/bienvenido</item>
-        <item>@color/RoyalBlue</item>
-        <item>@color/SeaGreen</item>
+        <item>@color/pastel01</item>
+        <item>@color/pastel02</item>
+        <item>@color/pastel03</item>
+        <item>@color/pastel04</item>
+        <item>@color/pastel05</item>
+        <item>@color/pastel06</item>
+        <item>@color/pastel07</item>
+        <item>@color/pastel08</item>
+        <item>@color/pastel09</item>
+        <item>@color/pastel10</item>
     </integer-array>
 </resources>
